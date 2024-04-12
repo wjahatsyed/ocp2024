@@ -6,7 +6,7 @@ public enum Animals {
     }
 
     class TestEnum{
-        final Animals a= CAT;
+        static Animals a;
         public static void main(String [] args){
             //System.out.println(a.DOG.sound +" " + a.CAT.sound);
         }
