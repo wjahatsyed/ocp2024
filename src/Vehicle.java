@@ -16,6 +16,9 @@ class Subaru extends Car{
         if(car instanceof Vehicle){
             System.out.println("Car is a vehicle");
         }
+        if(subaru instanceof Vehicle){
+            System.out.println("Subaru is a vehicle");
+        }
      }
 
  }
