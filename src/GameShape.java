@@ -4,9 +4,14 @@ public class GameShape {
     }
 }
 
-class PlayerPiece extends GameShape{
+class PlayerPiece extends GameShape implements Animatable{
     public void movePiece(){
         System.out.println("Moving piece");
+    }
+
+    @Override
+    public void animate() {
+        System.out.println("Animating");
     }
 }
 class TilePiece extends GameShape{
@@ -25,4 +30,7 @@ class TestClassNew extends GameShape{
     public static void doShapes(GameShape gameShape){
         gameShape.displayShape();
     }
+}
+interface Animatable{
+    void animate();
 }
